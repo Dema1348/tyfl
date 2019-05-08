@@ -9,3 +9,18 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+$ionicons-font-path: "../src/assets/fonts/" !default;
+
+@font-face {
+    font-family: 'Organo';
+    src:  url($ionicons-font-path+'Organo.ttf.woff') format('woff'),
+    url($ionicons-font-path+'Organo.ttf.svg#Organo') format('svg'),
+    url($ionicons-font-path+'Organo.ttf.eot'); 
+    font-weight: normal;
+    font-style: normal;
+
+  }
+
+  @import '../src/theme/button.scss';
+  @import '../src/theme/input.scss';

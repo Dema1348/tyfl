@@ -1,0 +1,15 @@
+.input-tyfl {
+    color: #99CDBC;
+    --border-color: #3C1C67;
+    --border-width: 2px !important;
+    --border-radius: 6px;
+    --min-height: 55px;
+    ion-input {
+        color: #99CDBC;
+        font-family: "Organo";
+        --placeholder-color: #99CDBC;
+        --placeholder-opacity: 1;
+        font-size: 24px;
+      }
+   
+}

@@ -1,5 +1,7 @@
 {
   "name": "tyflApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

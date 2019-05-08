@@ -1,0 +1,52 @@
+page-register{
+    ion-content{
+        --background: transparent;
+        background-image: url('/assets/images/background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        min-width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+        display: block;
+        .logo{
+            max-width: 200px;
+        }
+        .info{
+            margin-top: 0;
+            text-align: center;
+            font-size: 32px;
+            font-family: 'Organo';
+            color: #ffffff;
+        }
+        ion-list{
+            background: transparent!important;
+            margin-bottom: 8px!important;
+            ion-item {
+                margin-bottom: 8px;
+            }
+        }
+        .box-buttons{
+            margin: 0 10px;
+        }
+        .check{
+            --border-color: #3C1C67;
+            --background: transparent;
+            ion-label{
+                font-family: 'Organo'!important;
+                --color: #ffffff!important;
+                span{
+                    color: var(--ion-color-primary);
+                }
+            }
+            ion-checkbox{
+                --border-color: #3C1C67;
+
+            }
+        }
+       
+    }
+  
+}

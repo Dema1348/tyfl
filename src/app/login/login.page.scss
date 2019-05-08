@@ -1,9 +1,5 @@
 
-page-home{
-    ion-title{
-        font-family: 'Organo';
-        color:#fff;
-    }
+page-login{
     ion-content{
         --background: transparent;
         background-image: url('/assets/images/background.jpg');
@@ -16,13 +12,20 @@ page-home{
         min-height: 100%;
         overflow: hidden;
         display: block;
-        .map{
-            border: 4px solid var(--ion-color-primary);
+        .logo{
+            margin-bottom: 32px;
         }
-
-        .box-buttons{
-            margin: 0 16px;
+        .social{
+            margin-top: 32px;
         }
-       
+        .welcome{
+            margin-top: 32px;
+            text-align: center;
+            font-size: 32px;
+            font-family: 'Organo';
+            color: var(--ion-color-primary);
+        }
     }
+  
+
 }

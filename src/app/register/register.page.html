@@ -1,0 +1,38 @@
+
+<ion-content padding>
+        <img class="logo" src="/assets/images/logo.png">
+        <h1 class="info">registrate y completa con tus datos</h1>
+        <form [formGroup]="registerForm" novalidate >
+            <ion-list lines="none" mode="ios">
+                    <ion-item class="input-tyfl">
+                            <ion-input  formControlName="name"  placeholder="NOMBRE Y APELlIDO"></ion-input>
+                    </ion-item>
+                    <ion-item class="input-tyfl">
+                            <ion-input  formControlName="run"  placeholder="R.U.N"></ion-input>
+                    </ion-item>
+                    <ion-item class="input-tyfl">
+                            <ion-input  formControlName="email"  placeholder="CORREO ELECTRONICO"></ion-input>
+                    </ion-item>
+                    <ion-item class="input-tyfl">
+                            <ion-input formControlName="pass" type="password"  placeholder="CONTRASEÑA"></ion-input>
+                    </ion-item>
+                    <ion-item class="input-tyfl">
+                            <ion-input formControlName="pass2"  type="password"    placeholder="REPETIR CONTRASEÑA"></ion-input>
+                    </ion-item>
+            </ion-list>
+            <div class="box-buttons">
+                    <ion-button class="button-tyfl" expand="full" shape="round" mode="ios"
+                color="primary" [disabled]="!registerForm.valid" routerLink="/home">
+                    REGISTRARSE
+                </ion-button>
+                <ion-button class="button-tyfl" expand="full" shape="round" mode="ios"
+                color="primary" routerLink="/login">
+                    CANCELAR
+                </ion-button>
+            </div>
+            <ion-item lines="none"  class="check" >
+                    <ion-label  text-wrap>acepta las <span>condiciones</span> de nuestro servicio</ion-label>
+                    <ion-checkbox slot="start" mode="md" ></ion-checkbox>
+            </ion-item>
+        </form>
+</ion-content>
